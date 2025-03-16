@@ -31,9 +31,7 @@ button.addEventListener("click", () => {
             isFetching = false
         }
 
-        
     }
-        
     getData()
 
 })

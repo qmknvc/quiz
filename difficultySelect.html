@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="index.js"></script>
-    <title>Trivia Quiz</title>
+    <script type="module" src="difficultySelect.js"></script>
+    <title>Select Difficulty</title>
 </head>
 <style>
-    * {
+     * {
         margin: 0;
         box-sizing: border-box;
         font-family: 'Fredoka One', cursive, sans-serif;
     }
-
     html,
     body {
         height: 100%;
     }
-
     .option-select {
         padding: 1em;
     }
-
     button {
         padding: 1em;
         width: 12em;
@@ -54,9 +50,11 @@
         background-color: rgb(234, 234, 234);
         min-height: 100%;
     }
-
     .inner-div {
         padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     #options {
         border: 1em dotted rgb(95, 67, 93);
@@ -68,37 +66,65 @@
         margin-top: 0.5em;
         text-shadow: 0.2em 0.3em 0.2em rgba(0, 0, 0, 0.2);
     }
-    
-
-    #mods::after {
-        content: "Mods";
+    #name-insert {
+        border-radius: 1em;
+        padding: 0.5em;
+        border-left-width: 0.4em;
+        border-right-width: 0.4em;
+        border-top: 0;
+        border-bottom: 0;
+        border-right-color: rgb(95, 67, 93);
     }
-
-    #mods:hover:after {
-        content: "Coming soon!";
+    #profile-name {
+        font-size: 1.5em;
+        padding: 0.5em;
+    }
+    #go-button {
+        border-bottom: 0;
+        border-right: 0.45em solid rgb(95, 67, 93);
+        border-left: 0.45em solid rgb(95, 67, 93);
+        width: 9em;
+    }
+    #go-button:hover {
+        border-right: 0.45em solid rgb(30, 30, 30);
+        border-left: 0.45em solid rgb(30, 30, 30);
+    }
+    #go-section {
+        border-top: 0.6em dotted rgb(95, 67, 93);
+        border-radius: 36%;
+        padding: 0;
+        padding-top: 1.2em;
+        margin-top: 2em;
     }
 </style>
 <body>
     <div id="center-div">
         <div class="inner-div" id="title">
-            <h1>Welcome to the quiz!</h1>
+            <h1>Choose difficulty and set your name!</h1>
         </div>
 
         <div class="inner-div" id="options">
-            <div class="option-select">
-                <a href="categorySelect.html"><button id="play">Play</button></a>
+            <div class="option-select" id="profile-name">
+                <label>Insert profile name:</label>
             </div>
             <div class="option-select">
-                <button id="how-to-play">How To Play</button>
+                <input placeholder="Username" id="name-insert">
             </div>
-            <div class="option-select">
-                <button id="mods"></button>
+
+            <div id="difficulty-section">
+                <div class="option-select">
+                    <button id="easy">Easy</button>
+                </div>
+                <div class="option-select">
+                    <button id="medium">Medium</button>
+                </div>
+                <div class="option-select">
+                    <button id="hard">Hard</button>
+                </div>
             </div>
-            <div class="option-select">
-                <button id="leaderboards">Leaderboards</button>
-            </div>
-            <div class="option-select">
-                <button id="credits">Credits</button>
+
+            <div class="option-select" id="go-section">
+                <button id="go-button">GO!</button>
             </div>
         </div>
     </div>
