@@ -1,89 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="categorySelect.js"></script>
+    <link rel="stylesheet" href="categorySelect.css">
     <title>Select Categories</title>
 </head>
-<style>
-    * {
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'Fredoka One', cursive, sans-serif;
-    }
-    html, body {
-        height: 100%;
-    }
-
-    .category-select {
-        padding: 0.6em
-    }
-
-    button {
-        padding: 1em;
-        width: 12em;
-        border-radius: 10em;
-        font-weight: bold;
-        background-size: cover;
-        transition: 0.2s;
-        border: 0 solid rgb(95, 67, 93);
-        box-shadow: 0.3em 0.5em rgba(0, 0, 0, 0.3);
-        background-color: white;
-        border-bottom: 0.45em solid rgb(95, 67, 93);
-    }
-
-    button:hover {
-        color: white;
-        cursor: pointer;
-        background-color: rgb(95, 67, 93);
-        border-bottom-color: rgb(30, 30, 30);
-    }
-
-    #center-div {
-        border: 3em inset rgb(95, 67, 93);
-        min-height: 100%;
-        display: flex;
-        background-color: rgb(234, 234, 234);
-        display: flex;
-        flex-direction: column;
-        box-shadow: inset 0em 0em 3em rgba(0, 0, 0, 0.6);
-    }
-
-    .inner-div {
-        margin: auto;
-    }
-
-    #category-list {
-        border: 1em dotted rgb(95, 67, 93);
-        width: 25em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: auto;
-        background-color: rgb(234, 234, 234);
-        margin-bottom: 11.5em;
-        padding-top: 2.8em;
-        padding-bottom: 1.5em;
-        margin-top: 3.5em;
-    }
-    #title {
-        margin-top: 5em;
-        padding: 1em;
-        text-shadow: 0.2em 0.3em 0.2em rgba(0, 0, 0, 0.2);
-    }
-
-    #reset-button {
-        margin-left: 2.5em;
-        width: 7em;
-    }
-    
-</style>
 
 <body>
     <div id="center-div">
-        <div class="inner-div" id="title"> 
+        <div class="inner-div" id="title">
             <h1>Choose categories you want in the quiz!</h1>
         </div>
 
