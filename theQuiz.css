@@ -1,97 +1,103 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive, sans-serif;
+    overflow: hidden;
+}
 
-        * {
-            margin: 0;
-            box-sizing: border-box;
-            font-family: 'Fredoka One', cursive, sans-serif;
-            overflow: hidden;
-        }
+html,
+body {
+    height: 100%;
+}
 
-        html,
-        body {
-            height: 100%;
-        }
+button {
+    padding: 1em;
+    width: 15em;
+    height: 6em;
+    font-weight: bold;
+    background-size: cover;
+    transition: 0.2s;
+    border-radius: 10em;
+    border: 0 solid rgb(95, 67, 93);
+    box-shadow: 0.3em 0.5em rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-bottom: 0.45em solid rgb(95, 67, 93);
+    word-wrap: break-word;
+}
 
-        button {
-            padding: 1em;
-            width: 15em;
-            height: 6em;
-            font-weight: bold;
-            background-size: cover;
-            transition: 0.2s;
-            border-radius: 10em;
-            border: 0 solid rgb(95, 67, 93);
-            box-shadow: 0.3em 0.5em rgba(0, 0, 0, 0.3);
-            background-color: white;
-            border-bottom: 0.45em solid rgb(95, 67, 93);
-            word-wrap: break-word;
-        }
-        .button-text {
-            font-size: 1.3em;
-            font-weight: 100;
-        }
+.button-text {
+    font-size: 1.3em;
+    font-weight: 100;
+}
 
-        button:hover {
-            color: white;
-            cursor: pointer;
-            background-color: rgb(95, 67, 93);
-            border-bottom-color: rgb(30, 30, 30);
-        }
-        button:disabled {
-            opacity: 1;
-            color: black;
-        }
-        #center-div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            border: 3em inset rgb(95, 67, 93);
-            box-shadow: inset 0em 0em 3em rgba(0, 0, 0, 0.6);
-            background-color: rgb(234, 234, 234);
-            min-height: 100%;
-        }
+button:hover {
+    color: white;
+    cursor: pointer;
+    background-color: rgb(95, 67, 93);
+    border-bottom-color: rgb(30, 30, 30);
+}
 
-        .inner-div {
-            padding: 1em;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-        }
+button:disabled {
+    opacity: 1;
+    color: black;
+}
 
-        #options {
-            border: 1em dotted rgb(95, 67, 93);
-            background-color: rgb(234, 234, 234);
-            padding: 4em;
-            margin: 2em;
-            max-width: 43em;
-        }
-        #answers {
-            display: flex;
-            flex-wrap: wrap;
-            z-index: 20;
-        }
-        .option-select {
-            padding: 2em;
-        }
+#center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3em inset rgb(95, 67, 93);
+    box-shadow: inset 0em 0em 3em rgba(0, 0, 0, 0.6);
+    background-color: rgb(234, 234, 234);
+    min-height: 100%;
+}
 
-        #question {
-            margin-bottom: 2.5em;
-            margin-top: 0.5em;
-            text-shadow: 0.2em 0.3em 0.2em rgba(0, 0, 0, 0.2);
-        }
-        #countdown {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 50vh;
-            color: black;
-            opacity: 0.09;
-            pointer-events: none;
-            font-family: 'Oswald', sans-serif;
-            z-index: 10;
-        }
-        h1 {
-            font-weight: 100;
-        }
+.inner-div {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#options {
+    border: 1em dotted rgb(95, 67, 93);
+    background-color: rgb(234, 234, 234);
+    padding: 4em;
+    margin: 2em;
+    max-width: 43em;
+}
+
+#answers {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 20;
+}
+
+.option-select {
+    padding: 2em;
+}
+
+#question {
+    margin-bottom: 2.5em;
+    margin-top: 0.5em;
+    text-shadow: 0.2em 0.3em 0.2em rgba(0, 0, 0, 0.2);
+}
+
+#countdown {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50vh;
+    color: black;
+    opacity: 0.09;
+    pointer-events: none;
+    font-family: 'Oswald', sans-serif;
+    z-index: 10;
+}
+
+h1 {
+    font-weight: 100;
+}
