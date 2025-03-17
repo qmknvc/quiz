@@ -7,7 +7,7 @@ const getQuestions = async (quizCategories, difficultySelected) => {
         const data = await response.json()
         isFetching = false
         return data
-    } catch(err) {
+    } catch (err) {
         console.log(err)
     } finally {
         isFetching = false
