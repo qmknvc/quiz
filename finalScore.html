@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="finalScore.js"></script>
+    <title>Final Score</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Fredoka One', cursive, sans-serif;
+    }
+    html, body {
+        height: 100%;
+    }
+    .category-select {
+        padding: 0.6em
+    }
+    #center-div {
+        border: 3em inset rgb(95, 67, 93);
+        min-height: 100%;
+        display: flex;
+        background-color: rgb(234, 234, 234);
+        display: flex;
+        flex-direction: column;
+        box-shadow: inset 0em 0em 3em rgba(0, 0, 0, 0.6);
+    }
+    .inner-div {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #category-list {
+        border: 1em dotted rgb(95, 67, 93);
+        width: 25em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        background-color: rgb(234, 234, 234);
+        padding-top: 3em;
+        padding-bottom: 3em;
+        margin-top: auto;
+        margin-bottom: 15em;
+    }
+    #title {
+        padding: 1em;
+        text-shadow: 0.2em 0.3em 0.2em rgba(0, 0, 0, 0.2);
+    }
+    button {
+        padding: 1em;
+        width: 12em;
+        border-radius: 10em;
+        font-weight: bold;
+        background-size: cover;
+        transition: 0.2s;
+        border: 0 solid rgb(95, 67, 93);
+        box-shadow: 0.3em 0.5em rgba(0, 0, 0, 0.3);
+        background-color: white;
+        border-bottom: 0.45em solid rgb(95, 67, 93);
+    }
+
+    button:hover {
+        color: white;
+        cursor: pointer;
+        background-color: rgb(95, 67, 93);
+        border-bottom-color: rgb(30, 30, 30);
+    }
+</style>
+
+<body>
+    <div id="center-div">
+        <div class="inner-div" id="title"> 
+            <h1>Thanks for Playing</h1>
+        </div>
+        <div class="inner-div" id="title"> 
+            <h2>Your final score:</h2>
+        </div>
+        <div class="inner-div" id="category-list">
+            <div class="category-select">
+                <h2 id="player-name">Loading Player...</h2>
+            </div>
+            <div class="category-select">
+                <h1 id="score">Loading Score...</h1>
+            </div>
+            <div class="category-select">
+                <a href="index.html"><button id="confirm-button">Back to Menu</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

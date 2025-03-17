@@ -4,80 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
     <title>Trivia Quiz</title>
 </head>
-<style>
-    * {
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'Fredoka One', cursive, sans-serif;
-    }
 
-    html,
-    body {
-        height: 100%;
-    }
-
-    .option-select {
-        padding: 1em;
-    }
-
-    button {
-        padding: 1em;
-        width: 12em;
-        font-weight: bold;
-        background-size: cover;
-        transition: 0.2s;
-        border-radius: 10em;
-        border: 0 solid rgb(95, 67, 93);
-        box-shadow: 0.3em 0.5em rgba(0, 0, 0, 0.3);
-        background-color: white;
-        border-bottom: 0.45em solid rgb(95, 67, 93);
-        
-    }
-
-    button:hover {
-        color: white;
-        cursor: pointer;
-        background-color: rgb(95, 67, 93);
-        border-bottom-color: rgb(30, 30, 30);
-    }
-
-    #center-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border: 3em inset rgb(95, 67, 93);
-        box-shadow: inset 0em 0em 3em rgba(0, 0, 0, 0.6);
-        background-color: rgb(234, 234, 234);
-        min-height: 100%;
-    }
-
-    .inner-div {
-        padding: 1em;
-    }
-    #options {
-        border: 1em dotted rgb(95, 67, 93);
-        background-color: rgb(234, 234, 234);
-        padding: 4em;
-    }
-    #title {
-        margin-bottom: 2.5em;
-        margin-top: 0.5em;
-        text-shadow: 0.2em 0.3em 0.2em rgba(0, 0, 0, 0.2);
-    }
-    
-
-    #mods::after {
-        content: "Mods";
-    }
-
-    #mods:hover:after {
-        content: "Coming soon!";
-    }
-</style>
 <body>
     <div id="center-div">
         <div class="inner-div" id="title">
@@ -89,18 +19,19 @@
                 <a href="categorySelect.html"><button id="play">Play</button></a>
             </div>
             <div class="option-select">
-                <button id="how-to-play">How To Play</button>
+                <button id="how-to-play"></button>
             </div>
             <div class="option-select">
                 <button id="mods"></button>
             </div>
             <div class="option-select">
-                <button id="leaderboards">Leaderboards</button>
+                <button id="leaderboards"></button>
             </div>
             <div class="option-select">
-                <button id="credits">Credits</button>
+                <button id="credits"></button>
             </div>
         </div>
     </div>
 </body>
+
 </html>
